@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head> 
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
-    <title>Foreign Finds Postings</title>
+    <title>Foreign Finds Form</title>
 </head>
 <body>
     <img src="images/logo.png" width="250" height="150" alt="Blue Earth with Foreign Finds above it">
-    <h1>Restaurant Posting</h1>
+    <h1>Restaurant Form</h1>
     <p>This page will be for Restaurant owners to be able to post their website to Foreign Finds. This page will be  form 
         page and will be linked from the page where the resturant posts will live. Owners can post a description of their website,
         images, a menu, and their contact and location. 
@@ -20,13 +21,13 @@
             <th>Location</th>
         </tr>
         <tr>
-            <td>Four Seasons</td>
+            <td id = "RestName">Four Seasons</td>
             <td>Cambodian</td>
             <td>508-999-0000</td>
             <td> 361 Reservoir Ave, Providence, RI 02907</td>
         </tr>
         <tr>
-            <td>Apsara</td>
+            <td id = "RestName">Apsara</td>
             <td>Cambodian</td>
             <td>401-785-1490</td>
             <td>716 Public St #1625, Providence, RI 02907</td>
@@ -40,6 +41,9 @@
         <input type="text" id="Description" name="Description" maxlength="300" size="50">
       </form>
     <br>
-    <a href="index.html">Home Webpage</a>
-    <a href="posting.html">Second Webpage</a>
+    <div class = "links">
+        <a href="index.html">Home Webpage</a><br>
+        <a href="posting.html">Second Webpage</a><br>
+        <a href="resturant_post.html">Third Webpage</a>
+    </div>
 </body>

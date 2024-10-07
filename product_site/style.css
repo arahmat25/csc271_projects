@@ -1,0 +1,36 @@
+h1 {
+    font-family: 'Times New Roman', serif;
+    color: rgb(8, 85, 133);
+}
+
+p {
+    font-family: 'Courier New', 'Lucida Console', monospace;
+}
+
+a:link {
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+#RestName {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.links {
+    text-decoration: underline;
+}
+
+body {
+    background-color: rgb(150, 183, 194);
+  }

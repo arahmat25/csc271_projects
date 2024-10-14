@@ -1,10 +1,12 @@
 h1 {
     font-family: 'Times New Roman', serif;
     color: rgb(8, 85, 133);
+    text-align: center;
 }
 
 p {
     font-family: 'Courier New', 'Lucida Console', monospace;
+    text-align: center;
 }
 
 a:link {
@@ -34,3 +36,82 @@ a:hover {
 body {
     background-color: rgb(150, 183, 194);
   }
+
+.header {
+  overflow: hidden;
+  padding: 5px 5px 5px 5px;
+  background-color: #b7a4de;
+}
+
+
+.header-right{
+  float: right;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 12px;
+  font-family: "Afacad Flux", sans-serif;
+}
+
+
+.header-right a:hover {
+  color: #ff0000;
+}
+
+
+.header-right a:active {
+  color: purple;
+  background-color: red;
+}
+
+#logo{
+    display: block;
+    margin: auto;
+}
+
+#main-image-right{
+    margin:auto;
+}
+
+.main_content{
+    
+    background-color: lightslategray;
+    padding: 20px;
+    margin-top: 20px;
+     
+      
+}
+
+@media screen and (max-width: 600px){
+    .header a{
+      float: none;
+      display: block;
+      text-align: left;
+  
+  
+    }
+  
+  
+    .header-right{
+      float: none;
+    }
+  
+  
+    .left-col{
+      width: 100%;
+    }
+  
+  
+    .right-col{
+      width: 100%;
+    }
+    .main_content{
+      font-size: 30px;
+    }
+  }
+  
+  
+  img{
+    width: 100%;
+    height: auto;
+  }
+  

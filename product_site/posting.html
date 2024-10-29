@@ -23,13 +23,16 @@
         images, a menu, and their contact and location. 
     </p>
     <p>This table represents the information that will be displayed after filling out the form</p>
-    <table>
+    <table border ="1" id ="previewTable">
+        <thead>
         <tr>
             <th>Restaurant Name</th>
             <th> Cuisine Name</th>
             <th> Contact</th>
             <th>Location</th>
         </tr>
+    </thead>
+    <tbody>
         <tr>
             <td id = "RestName">Four Seasons</td>
             <td>Cambodian</td>
@@ -42,14 +45,27 @@
             <td>401-785-1490</td>
             <td>716 Public St #1625, Providence, RI 02907</td>
         </tr>
+    </tbody>
     </table>
 
-    <form>
-        <label for="fname">Resturant Name:</label><br>
+    <form onsubmit="return showAlert()" >
+        <label for="rname">Restaurant Name:</label><br>
         <input type="text" id="rname" name="rname" size="50"><br>
-        <label for="Description">Description of Restaurant:</label><br>
-        <input type="text" id="Description" name="Description" maxlength="300" size="50">
-      </form>
+        
+        <label for="cuisine">Cuisine Name:</label><br>
+        <input type="text" id="cuisine" name="cuisine" size="50"><br>
+        
+        <label for="contact">Contact:</label><br>
+        <input type="text" id="contact" name="contact" size="50"><br>
+        
+        <label for="location">Location:</label><br>
+        <input type="text" id="location" name="location" size="50"><br>
+        
+        
+        <input type="submit" value="Submit">
+    </form>
     <br>
+    <p class ="review"></p>
     </div>
+    <script src ="js/simple_script.js"></script>
 </body>

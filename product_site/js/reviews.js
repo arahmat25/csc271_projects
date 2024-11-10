@@ -7,8 +7,12 @@ var reviews = [
 
 var reviewsElement = document.querySelector('#test');
 var reviewsText = '';
+function reviewsDisplay(reviews,element){
+    for (var i = 0; i < reviews.length; i++) {
+        reviewsText += reviews[i] + '<br>';    }
+    reviewsElement.innerHTML = reviewsText;
+}
 
-for (var i = 0; i < reviews.length; i++) {
-    reviewsText += reviews[i] + '<br>';    }
+reviewsDisplay(reviews,reviewsElement);
 
-reviewsElement.innerHTML = reviewsText;
+

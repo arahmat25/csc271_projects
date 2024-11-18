@@ -57,6 +57,9 @@ function showAlert() {
     }
 }
 
+var form = document.getElementById('restForm');
+form.addEventListener('submit',showAlert,);
+
 
 
 document.getElementsByTagName("a")[0].textContent="Homepage";

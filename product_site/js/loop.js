@@ -28,9 +28,9 @@ for (let index = 0; index < images.length; index++) {
     // Set the first image as active
     if (index === 0) img.classList.add('active');
     
-    img.addEventListener('click', function() {
-        redirect(index);
-    });
+    // img.addEventListener('click', function() {
+    //     redirect(index);
+    // });
     container.appendChild(img);
 }
 

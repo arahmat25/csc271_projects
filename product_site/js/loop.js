@@ -1,12 +1,17 @@
 //array to hold images
 var images=[
-    {src: 'images/cambodia.webp', url: 'cusine.html'},
+    {src: 'images/cambodia.webp', url:'cusine.html' },
     {src: 'images/malaysia.jfif', url: 'cusine.html'},
     {src: 'images/Flag-Philippines.webp',url: 'cusine.html'}
 ];
 
 function redirect(index){
+    //store the index to know which object to display
+    localStorage.setItem('objectIndex',index);
     window.location.href = images[index].url;
+    
+   
+   
 }
 
 // get elements in imageContainer
@@ -23,8 +28,9 @@ for (let index = 0; index < images.length; index++) {
     // Set the first image as active
     if (index === 0) img.classList.add('active');
     
-    // Add a click event listener to redirect the user
-    img.addEventListener('click', redirect(index));
+    img.addEventListener('click', function() {
+        redirect(index);
+    });
     container.appendChild(img);
 }
 

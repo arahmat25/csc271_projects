@@ -109,15 +109,22 @@ body {
 
   .header-right {
       float: none;
-      text-align: center; /* Center for smaller screens */
+      text-align: center; 
   }
 
   .main_content {
-      font-size: 20px; /* Adjust font size for mobile */
+      font-size: 20px; 
   }
 }
 
 img {
   width: 100%;
   height: auto;
+}
+
+#restaurantImage {
+  display: block; 
+    margin: 0 auto;  
+    width: 200px;
+    height: auto;  
 }

@@ -8,10 +8,10 @@ var images = [
 function redirect(index) {
     // store the index to know which object to display
     localStorage.setItem('objectIndex', index);
-    window.location.href = images[index].url;
+    window.location.href = images[index].url;  // Redirect to the corresponding page
 }
 
-// get elements in imageContainer
+// Get elements in imageContainer
 var container = document.getElementById('imageContainer');
 let currentIndex = 0;
 
@@ -28,18 +28,19 @@ for (let index = 0; index < images.length; index++) {
     
     // Add event listener to redirect on click
     img.addEventListener('click', function() {
-        redirect(index);
+        redirect(index);  // Trigger redirect when image is clicked
     });
 
     container.appendChild(img);
 }
 
-// Function to change the image
+// Function to change the image (carousel behavior)
 function changeImage() {
-    var imgs = document.querySelectorAll('.image-container img');
-    imgs[currentIndex].classList.remove('active');
-    currentIndex = (currentIndex + 1) % imgs.length;
-    imgs[currentIndex].classList.add('active');
+    var imgs = document.querySelectorAll('.image-container img');  // Get all images
+    imgs[currentIndex].classList.remove('active');  // Remove 'active' from current image
+    currentIndex = (currentIndex + 1) % imgs.length;  // Increment and loop back to 0 after last image
+    imgs[currentIndex].classList.add('active');  // Add 'active' to the next image
 }
 
+// Set interval to change the image every 3 seconds
 setInterval(changeImage, 3000);

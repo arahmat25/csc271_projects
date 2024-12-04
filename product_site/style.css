@@ -128,3 +128,7 @@ img {
     width: 200px;
     height: auto;  
 }
+
+#man {
+  font-weight: bold;
+}

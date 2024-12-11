@@ -43,7 +43,7 @@ function blur3(){
     if (contactInput == ""){
         feed.innerHTML = "There is no contact info submitted";
     }else if(contactInput.value.length != 12){
-        feed.innerHTML = "Please format the contact info: XXX-XXX-XXXX"
+        feed.innerHTML = "Please format the contact info: XXX-XXX-XXXX";
     }
     else{
         feed.innerHTML = "";
